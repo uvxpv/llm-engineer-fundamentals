@@ -110,12 +110,14 @@ for query in QUERIES:
     )
 
     print(f"Query: {query}")
-    for i, (doc, meta, dist) in enumerate(zip(
-        results["documents"][0],
-        results["metadatas"][0],
-        results["distances"][0],
-    )):
+    for i, (doc, meta, dist) in enumerate(
+        zip(
+            results["documents"][0],
+            results["metadatas"][0],
+            results["distances"][0],
+        )
+    ):
         # ChromaDB returns L2 distance by default; lower = more similar.
-        print(f"  [{i+1}] source={meta['source']}  distance={dist:.4f}")
+        print(f"  [{i + 1}] source={meta['source']}  distance={dist:.4f}")
         print(f"       {doc[:100]}...")
     print()
