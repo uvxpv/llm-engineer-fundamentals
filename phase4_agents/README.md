@@ -12,3 +12,4 @@ Implement the ReAct (Reason + Act) agent pattern with tool use.
 ## Scripts
 
 - `01_react_agent.py` — ReAct agent with tool use
+- `02_agent_memory.py` — Multi-turn REPL with persistent conversation memory
