@@ -11,4 +11,5 @@ Measure and improve RAG pipeline quality using RAGAS metrics.
 
 ## Scripts
 
-- `01_ragas_eval.py` — Evaluate the RAG pipeline with RAGAS metrics
+- `01_ragas_eval.py` — Evaluate the RAG pipeline with RAGAS metrics (faithfulness, relevancy, precision, recall)
+- `02_llm_judge.py` — LLM-as-judge: score answers on a rubric without ground truth
